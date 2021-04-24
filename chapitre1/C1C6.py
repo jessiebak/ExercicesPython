@@ -34,5 +34,127 @@
 #region indice
 # Vos if peuvent s'imbriquer ! Un if peut se passer dans un if ou dans un else ou dans un elif !
 #endregion
-player1 = input("Entrez le nom de la première personne")
-player1Card= int(input(f"Quel est le nombre de carte de {player1}"))
+
+player1 = input("Entrez le nom de la première personne \t")
+P1C= int(input(f"Quel est le nombre de carte de {player1}"))
+player2 = input("Entrez le nom de la deuxième personne\t ")
+P2C= int(input(f"Quel est le nombre de carte de {player2}"))
+player3 = input("Entrez le nom de la troisième personne \t")
+P3C= int(input(f"Quel est le nombre de carte de {player3}"))
+player4 = input("Entrez le nom de la quatrième personne \t")
+P4C= int(input(f"Quel est le nombre de carte de {player4}"))
+
+ #TOUTES SOLUTIONS SI P1 EST PLUS GRAND
+if P1C > P2C > P3C > P4C or P1C > P3C > P2C > P4C  or P1C > P4C > P3C > P2C or P1C > P4C > P2C > P3C or P1C > P3C > P4C > P2C or P1C > P2C > P4C > P3C:
+	print(f"La première personne avec le plus de carte est {player1} avec {P1C}")
+	if P2C > P3C > P4C or P2C > P4C > P3C :
+		print(f"La deuxième personne avec le plus de carte est {player2} avec {P2C}")
+		if P3C > P4C:
+			print(f"La troisième personne avec le plus de carte est {player3} avec {P3C}")
+			print(f"La quatrième personne avec le plus de carte est {player4} avec {P4C}")
+		else: 
+			print(f"La troisième personne avec le plus de carte est {player4} avec {P4C}")
+			print(f"La quatrième personne avec le plus de carte est {player3} avec {P3C}")
+	elif P3C > P2C > P4C or P3C > P4C > P2C :
+		print(f"La deuxième personne avec le plus de carte est {player3} avec {P3C}")
+		if P2C > P4C:
+			print(f"La troisième personne avec le plus de carte est {player2} avec {P2C}")
+			print(f"La quatrième personne avec le plus de carte est {player4} avec {P4C}")
+		else: 
+			print(f"La troisième personne avec le plus de carte est {player4} avec {P4C}")
+			print(f"La quatrième personne avec le plus de carte est {player2} avec {P2C}")
+	elif P4C > P2C > P3C or P4C > P3C > P2C :
+		print(f"La deuxième personne avec le plus de carte est {player4} avec {P4C}")
+		if P2C > P3C:
+			print(f"La troisième personne avec le plus de carte est {player2} avec {P2C}")
+			print(f"La quatrième personne avec le plus de carte est {player3} avec {P3C}")
+		else: 
+			print(f"La troisième personne avec le plus de carte est {player3} avec {P3C}")
+			print(f"La quatrième personne avec le plus de carte est {player2} avec {P2C}")
+	
+	#TOUTES SOLUTIONS SI P1 EST PLUS GRAND 
+elif P2C > P3C > P4C > P1C or P2C > P4C > P3C > P1C or P2C > P1C > P3C > P4C or  P2C > P1C > P4C > P3C or P2C > P3C > P1C > P4C or P2C > P4C > P1C > P3C :  
+		print(f"La première personne avec le plus de carte est {player2} avec {P2C}")
+		if P3C > P4C > P1C or P3C > P1C > P4C:
+			print(f"La deuxième personne avec le plus de carte est {player3} avec {P3C}")
+			if P4C > P1C: 
+				print(f"La troisième personne avec le plus de carte est {player4} avec {P4C}")
+				print(f"La quatrième personne avec le plus de carte est {player1} avec {P1C}")
+			else : 
+				print(f"La troisième personne avec le plus de carte est {player1} avec {P1C}")
+				print(f"La quatrième personne avec le plus de carte est {player4} avec {P4C}")
+		elif P4C > P1C > P3C or P4C > P3C > P1C :
+			print(f"La deuxième personne avec le plus de carte est {player4} avec {P4C}")
+			if P1C > P3C:
+				print(f"La troisième personne avec le plus de carte est {player1} avec {P1C}")
+				print(f"La quatrième personne avec le plus de carte est {player3} avec {P3C}")
+			else: 
+				print(f"La troisième personne avec le plus de carte est {player3} avec {P3C}")
+				print(f"La quatrième personne avec le plus de carte est {player1} avec {P1C}")
+		
+		elif P1C > P4C > P3C or P1C > P3C > P4C :
+			print(f"La deuxième personne avec le plus de carte est {player1} avec {P1C}")
+			if P4C > P3C:
+				print(f"La troisième personne avec le plus de carte est {player4} avec {P4C}")
+				print(f"La quatrième personne avec le plus de carte est {player3} avec {P3C}")
+			else: 
+				print(f"La troisième personne avec le plus de carte est {player3} avec {P3C}")
+				print(f"La quatrième personne avec le plus de carte est {player4} avec {P4C}")
+
+	#TOUTES SOLUTIONS SI P3 EST PLUS GRAND
+elif P3C > P2C > P4C > P1C or P3C > P4C > P2C > P1C or P3C > P1C > P2C > P4C or  P3C > P1C > P4C > P2C or P3C > P2C > P1C > P4C or P3C > P4C > P1C > P2C :  
+		print(f"La première personne avec le plus de carte est {player3} avec {P3C}")
+		if P2C > P4C > P1C or P2C > P1C > P4C:
+			print(f"La deuxième personne avec le plus de carte est {player2} avec {P2C}")
+			if P4C > P1C: 
+				print(f"La troisième personne avec le plus de carte est {player4} avec {P4C}")
+				print(f"La quatrième personne avec le plus de carte est {player1} avec {P1C}")
+			else : 
+				print(f"La troisième personne avec le plus de carte est {player1} avec {P1C}")
+				print(f"La quatrième personne avec le plus de carte est {player4} avec {P4C}")
+		elif P1C > P4C > P2C or P1C > P2C > P4C :
+			print(f"La deuxième personne avec le plus de carte est {player1} avec {P1C}")
+			if P4C > P2C:
+				print(f"La troisième personne avec le plus de carte est {player4} avec {P4C}")
+				print(f"La quatrième personne avec le plus de carte est {player2} avec {P2C}")
+			else:
+				print(f"La troisième personne avec le plus de carte est {player2} avec {P2C}")
+				print(f"La quatrième personne avec le plus de carte est {player4} avec {P4C}")
+		elif P4C > P1C > P2C or P4C > P2C > P1C :
+			print(f"La deuxième personne avec le plus de carte est {player4} avec {P4C}")
+			if P1C > P2C:
+				print(f"La troisième personne avec le plus de carte est {player1} avec {P1C}")
+				print(f"La quatrième personne avec le plus de carte est {player2} avec {P2C}")
+			else: 
+				print(f"La troisième personne avec le plus de carte est {player2} avec {P2C}")
+				print(f"La quatrième personne avec le plus de carte est {player1} avec {P1C}")
+		
+		
+elif P4C > P2C > P3C > P1C or P4C > P3C > P2C > P1C or P4C > P1C > P2C > P3C or  P4C > P1C > P3C > P2C or P4C > P2C > P1C > P3C or P4C > P3C > P1C > P2C :  
+		print(f"La première personne avec le plus de carte est {player4} avec {P4C}")
+		if P2C > P3C > P1C or P2C > P1C > P3C:
+			print(f"La deuxième personne avec le plus de carte est {player2} avec {P2C}")
+			if P3C > P1C: 
+				print(f"La troisième personne avec le plus de carte est {player3} avec {P3C}")
+				print(f"La quatrième personne avec le plus de carte est {player1} avec {P1C}")
+			else : 
+				print(f"La troisième personne avec le plus de carte est {player1} avec {P1C}")
+				print(f"La quatrième personne avec le plus de carte est {player3} avec {P3C}")
+		elif P1C > P3C > P2C or P1C > P2C > P3C :
+			print(f"La deuxième personne avec le plus de carte est {player1} avec {P1C}")
+			if P3C > P2C:
+				print(f"La troisième personne avec le plus de carte est {player3} avec {P3C}")
+				print(f"La quatrième personne avec le plus de carte est {player2} avec {P2C}")
+			else:
+				print(f"La troisième personne avec le plus de carte est {player2} avec {P2C}")
+				print(f"La quatrième personne avec le plus de carte est {player3} avec {P3C}")
+		elif P3C > P1C > P2C or P3C > P2C > P1C :
+			print(f"La deuxième personne avec le plus de carte est {player3} avec {P3C}")
+			if P1C > P2C:
+				print(f"La troisième personne avec le plus de carte est {player1} avec {P1C}")
+				print(f"La quatrième personne avec le plus de carte est {player2} avec {P2C}")
+			else: 
+				print(f"La troisième personne avec le plus de carte est {player2} avec {P2C}")
+				print(f"La quatrième personne avec le plus de carte est {player1} avec {P1C}")
+		
+		

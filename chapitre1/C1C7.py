@@ -7,3 +7,8 @@
 # La structure à respecter est comme suis :
 # ActionUne() if condition else ActionDeux() if condition else ActionTrois()
 #endregion
+
+age = int(input("Quelle est votre âge"))
+
+print("C'est un enfant") if age < 12 else print("C'est un adolescent") if age < 18  else print("C'est un adulte")
+
