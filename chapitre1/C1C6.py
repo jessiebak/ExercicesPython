@@ -6,7 +6,7 @@
 
 # Entrez le prénom de la première personne :
 # Sarah
-# Entrez le nombre de cartes Pokémon que possède Sarah :
+# Entrez le nombre de   cartes Pokémon que possède Sarah :
 # 124
 # Entrez le prénom de la deuxième personne :
 # Rebecca
