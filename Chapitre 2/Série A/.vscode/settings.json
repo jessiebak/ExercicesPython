@@ -1,0 +1,7 @@
+{
+    "editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"pythonIndent.trimLinesWithOnlyWhitespace": true,
+	"pythonIndent.useTabOnHangingIndent": true,
+	"python.autoComplete.addBrackets": true
+}
