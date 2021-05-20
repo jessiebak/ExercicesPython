@@ -29,3 +29,10 @@
 # Votre potion vous fait récupérer 1 point de vie
 # Votre potion vous fait récupérer 1 point de vie
 # Vous avez maintenant toute votre vie
+
+import time
+i = 0 
+while (i<10): 
+    time.sleep(1)
+    print("votre potion vous fait récupérer 1 point de vie")
+
