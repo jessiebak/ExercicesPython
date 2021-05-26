@@ -31,8 +31,22 @@
 # Vous avez maintenant toute votre vie
 
 import time
-i = 0 
-while (i<10): 
+
+
+i = 0
+PV = 4
+FullPV = 20 
+Maxtime = 10 
+
+print(f"Points de vie de départ :{PV}")
+while (i < Maxtime and PV <= FullPV): 
     time.sleep(1)
     print("votre potion vous fait récupérer 1 point de vie")
+    PV+=1 
+    i+=1
+else: 
+    if PV >= FullPV:
+        print("Vous avez récupéré tous vos points de vie")
+    else: 
+        print(f"Vous avez récupéré seulement {PV} points de vie")
 
