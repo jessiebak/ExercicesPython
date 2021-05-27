@@ -1,0 +1,79 @@
+demander l'âge le sexe et le pays et le nom de la personne, 
+
+
+
+1 accès ok
+2 pays bneelux
+3 pipi debout? 
+4 carte identite 
+
+
+displaystring()
+
+
+def chooseProgramme(nom, age, sexe, pays):
+    userinput = input("")
+    if userubut != 1 or 2 or 3 or 4  
+        print(choix inccorrect)
+        boucle
+    else:
+        if userinput == 1 :
+            Display((accèssite(age)))
+        elif userinput == 2:
+            benelux(pays)
+        elif userinput == 3:
+            pipidebout(sexe)
+        elif userinput == 4:
+        IDCARD(nom, age, sexe, pays)
+    
+    
+def Acces(age): 
+    if age < 0
+        print ("âge précédent erroné")
+        age = input("") 
+    if age >= 18 
+    print (ok)
+    else: 
+    print(non ok)
+    
+
+def pipidebout(sexe): 
+    displaystring = ""
+    if len(sex > 1):
+        print (une lettre)
+
+    if sexe == 'F'
+        displaystring = pipi assis)
+    elif sexe == 'M'
+        displaystring = pipi debout)
+    eiif sexe == 'X'
+        displaystinrg =(choix possible)
+    else:
+        return (sexe non existant)
+        sex= input("")
+    return displaystring
+
+def benelux (pays):
+    if lent(pays < 3)
+        print("Code pays)  
+        boucle
+    if pays == BE or NL or LUX:
+        print(benelux ok)
+    else: 
+        print(hors benelux) 
+
+
+def IDCARD (nom, age,sexe, pays):
+
+    print(nom)
+    print(age)
+    print(sexe)
+    print(pays)
+def Entry:
+    nom= input("")
+    age = input("")
+    sexe= input("")
+    pays = input("")
+
+    chooseProgramme(nom, age, sexe, pays)
+

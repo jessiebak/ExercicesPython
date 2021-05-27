@@ -1,0 +1,51 @@
+def sum nbr1, nbr2:
+    return nbr1 / nbr2
+def sub nbr1, nbr2:
+    soustrait nbr1 et nbr2
+    return nbr1 - nbr2
+def multiply nbr1, nbr2:
+    return multiply  nbr1 * nbr2
+
+def divise nbr1, nbr2:
+    si nbr2 == 0 :
+        print erreur
+        quiitter le programme ou redemande 
+    sinon
+        returuion *
+        division euclidiene nbr1 par nbr2
+        rajouter reste nbr1 diisisé par nbr2
+
+
+    def displayEntries:
+        userinput = input("")
+        nbr1 = input(")
+        nbr2 = input(")
+
+        si user input != 1 et 2 et3 et 4 
+            print (errer)
+            quitter ou introduire une boucle
+        else : 
+        return chooseOpération(userinput, nbr1,nbr2)
+        
+    
+    def choose opération(userinput, nbr1 nbr2):
+
+        si userinput == 1:
+           return sum(nbr1,nbr2)
+        
+        si userinput == 2:
+           return sub(nbr1,nbr2)
+
+        sinon si userinput == 3:
+            return multiply(nbr1 nbr1)
+        
+        sinon si  userinput == 4:
+            return division(nbr1, nbr2) 
+
+def displayrestult(result):
+    
+   print(displayEntries())
+
+
+
+
