@@ -7,8 +7,8 @@ demander l'âge le sexe et le pays et le nom de la personne,
 3 pipi debout? 
 4 carte identite 
 
-
-displaystring()
+def displaystring(_string):
+    print (_string)
 
 
 def chooseProgramme(nom, age, sexe, pays):
@@ -18,16 +18,16 @@ def chooseProgramme(nom, age, sexe, pays):
         boucle
     else:
         if userinput == 1 :
-            Display((accèssite(age)))
+            Display((accèsSite(age)))
         elif userinput == 2:
-            benelux(pays)
+            Display(benelux(pays))
         elif userinput == 3:
-            pipidebout(sexe)
+            Display(pipiDebout(sexe))
         elif userinput == 4:
         IDCARD(nom, age, sexe, pays)
     
     
-def Acces(age): 
+def AccesSite(age): 
     if age < 0
         print ("âge précédent erroné")
         age = input("") 
@@ -37,7 +37,7 @@ def Acces(age):
     print(non ok)
     
 
-def pipidebout(sexe): 
+def pipiDebout(sexe): 
     displaystring = ""
     if len(sex > 1):
         print (une lettre)
